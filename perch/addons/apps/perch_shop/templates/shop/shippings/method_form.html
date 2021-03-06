@@ -1,0 +1,18 @@
+<perch:form id="shipping_method" method="post" app="perch_shop">
+	<h4>Shipping method</h4>
+
+	<perch:error for="all" type="login">
+		<p class="error">Sorry, there was a problem.</p>
+	</perch:error>
+
+	<div>
+		<perch:label for="shipping">Method</perch:label>
+		<perch:input type="select" options="<perch:shop id="shippings_list" />" id="shipping" required="true" placeholder="Please choose"  />
+		<perch:error for="shipping" type="required">Required</perch:error>
+	</div>
+	<div>
+		<perch:input type="submit" id="submit" value="OK!" />
+		<perch:input type="hidden" id="r" />
+	</div>
+
+</perch:form>
