@@ -1,0 +1,3 @@
+[submodule "assets/css/natureslabcss"]
+	path = assets/css/natureslabcss
+	url = https://github.com/natureslaboratory/natureslabcss
